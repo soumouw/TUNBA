@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sacs à dos unisex | TUNBA</title>
+  <meta name="description" content="Sacs à dos unisex chez TUNBA à Sousse, Tunisie. Des sacs à dos pour tout le monde, au meilleur prix.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu principal -->
+  <header>
+    <div class="container nav">
+      <a href="index.html"><img src="images/TUNBAlogo.png" alt="Logo TUNBA"></a>
+      <button id="menu-btn" aria-expanded="false" aria-controls="menu-list">Menu</button>
+      <nav><ul id="menu-list"><li><a href="index.html">Accueil</a></li><li class="has-sub"><a href="produits.html" class=active>Produits</a><ul class="sub"><li><a href="homme.html">Homme</a></li><li><a href="femme.html">Femme</a></li><li><a href="unisex.html">Unisex</a></li><li><a href="enfants.html">Enfants</a></li></ul></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html">Contact</a></li><li><a href="connexion.html" id="nav-account">Compte</a></li><li><a href="panier.html">Panier <span id="cart-count">0</span></a></li></ul></nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <!-- Fil d'Ariane -->
+        <nav class="crumbs" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a> &gt; <a href="produits.html">Produits</a> &gt; <span aria-current="page">Unisex</span>
+        </nav>
+        <div class="head">
+          <span class="tag">Catégorie</span>
+          <h1>Unisex</h1>
+          <p>Des sacs à dos pour tout le monde, au meilleur prix.</p>
+        </div>
+        <div class="grid">
+        <article class="card product">
+          <div class="thumb"><img src="images/sac1.jpg" alt="Sac à dos Nike, modèle trendy"></div>
+          <div class="body">
+            <h3>Sac à dos Nike</h3>
+            <p class="price">65 DT</p>
+            <p>Trendy</p>
+            <div class="buy">
+              <a class="btn btn-outline" href="contact.html">Nous contacter</a>
+              <button class="btn" type="button" data-add="p1">Ajouter au panier</button>
+            </div>
+          </div>
+        </article>
+        <article class="card product">
+          <div class="thumb"><img src="images/sac2_2.jpg" alt="Sac à dos The North Face, modèle cool"></div>
+          <div class="body">
+            <h3>Sac à dos The North Face</h3>
+            <p class="price">80 DT</p>
+            <p>Cool</p>
+            <div class="buy">
+              <a class="btn btn-outline" href="contact.html">Nous contacter</a>
+              <button class="btn" type="button" data-add="p2">Ajouter au panier</button>
+            </div>
+          </div>
+        </article>
+        <article class="card product">
+          <div class="thumb"><img src="images/sac2_3.jpg" alt="Sac à dos The North Face grand espace pour le camping"></div>
+          <div class="body">
+            <h3>Sac à dos The North Face</h3>
+            <p class="price">95 DT</p>
+            <p>Grand espace, pour le camping</p>
+            <div class="buy">
+              <a class="btn btn-outline" href="produit-vedette.html">Voir le produit</a>
+              <button class="btn" type="button" data-add="p3">Ajouter au panier</button>
+            </div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Découvrez aussi -->
+    <section>
+      <div class="container">
+        <h2>Découvrez aussi</h2>
+        <div class="grid">
+          <article class="card product cat">
+            <div class="visual empty" aria-hidden="true"><span>Homme</span></div>
+            <div class="body">
+              <h3>Homme</h3>
+              <p>Sacs à dos pour homme.</p>
+              <a class="btn btn-outline" href="homme.html" aria-label="Découvrir la catégorie Homme">Découvrir</a>
+            </div>
+          </article>
+          <article class="card product cat">
+            <div class="visual empty" aria-hidden="true"><span>Femme</span></div>
+            <div class="body">
+              <h3>Femme</h3>
+              <p>Sacs pour femme.</p>
+              <a class="btn btn-outline" href="femme.html" aria-label="Découvrir la catégorie Femme">Découvrir</a>
+            </div>
+          </article>
+          <article class="card product cat">
+            <div class="visual empty" aria-hidden="true"><span>Enfants</span></div>
+            <div class="body">
+              <h3>Enfants</h3>
+              <p>Sacs à dos pour enfants.</p>
+              <a class="btn btn-outline" href="enfants.html" aria-label="Découvrir la catégorie Enfants">Découvrir</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Pied de page -->
+  <footer>
+    <div class="container">
+      <p>© 2026 TUNBA – Sousse, Tunisie</p>
+      <ul><li><a href="index.html">Accueil</a></li><li class="has-sub"><a href="produits.html">Produits</a><ul class="sub"><li><a href="homme.html">Homme</a></li><li><a href="femme.html">Femme</a></li><li><a href="unisex.html">Unisex</a></li><li><a href="enfants.html">Enfants</a></li></ul></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <span class="badge">☪ Made in Tunisia</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js" defer></script>
+  <script src="supabase-client.js" defer></script>
+  <script src="supabase-shop.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

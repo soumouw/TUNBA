@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vérification de l'e-mail | TUNBA</title>
+  <meta name="description" content="Vérification de l'e-mail – TUNBA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="verification">
+  <!-- Menu principal -->
+  <header>
+    <div class="container nav">
+      <a href="index.html"><img src="images/TUNBAlogo.png" alt="Logo TUNBA"></a>
+      <button id="menu-btn" aria-expanded="false" aria-controls="menu-list">Menu</button>
+      <nav><ul id="menu-list"><li><a href="index.html">Accueil</a></li><li class="has-sub"><a href="produits.html">Produits</a><ul class="sub"><li><a href="homme.html">Homme</a></li><li><a href="femme.html">Femme</a></li><li><a href="unisex.html">Unisex</a></li><li><a href="enfants.html">Enfants</a></li></ul></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html">Contact</a></li><li><a href="connexion.html" id="nav-account">Compte</a></li><li><a href="panier.html">Panier <span id="cart-count">0</span></a></li></ul></nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+      <div class="narrow"><h1>Vérifiez votre adresse e-mail</h1>
+      <div class="card" id="verify-pending"><div id="form-errors" class="errors" role="alert" tabindex="-1"></div>
+        <p>Un e-mail de confirmation doit être envoyé à <strong id="pending-email"></strong>. Ouvre le lien qu'il contient (regarde aussi les courriers indésirables). L'arrivée peut prendre quelques minutes ; nous ne pouvons pas la garantir.</p>
+        <p class="small">Une fois l'adresse confirmée, reviens te connecter.</p>
+        <div class="actions"><button class="btn btn-outline" id="resend" type="button">Renvoyer l'e-mail</button><a class="btn" href="connexion.html">Se connecter</a></div>
+        <p id="resend-msg" class="small" role="status"></p>
+      </div>
+      <div class="ok" id="verify-ok" role="status">Adresse confirmée : tu es connecté. <a href="compte.html"><u>Voir mon compte</u></a></div></div>
+      </div>
+    </section>
+  </main>
+  <!-- Pied de page -->
+  <footer>
+    <div class="container">
+      <p>© 2026 TUNBA – Sousse, Tunisie</p>
+      <ul><li><a href="index.html">Accueil</a></li><li class="has-sub"><a href="produits.html">Produits</a><ul class="sub"><li><a href="homme.html">Homme</a></li><li><a href="femme.html">Femme</a></li><li><a href="unisex.html">Unisex</a></li><li><a href="enfants.html">Enfants</a></li></ul></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <span class="badge">☪ Made in Tunisia</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js" defer></script>
+  <script src="supabase-client.js" defer></script>
+  <script src="supabase-shop.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
